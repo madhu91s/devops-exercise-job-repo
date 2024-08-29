@@ -21,6 +21,7 @@ public class Testcases {
 
 	@Test
 	void testOtherMethod() {
-		var r =	DevopsExercise.otherMethod("12");
+		boolean r =	DevopsExercise.otherMethod("12");
+		assertEquals(false, r);
 	}
 }
