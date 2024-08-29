@@ -1,4 +1,4 @@
-pipline {
+pipeline {
     agent any
 
     stages {
@@ -8,13 +8,13 @@ pipline {
                 sh "mvn build"
             }
         }
-        slage('Test') {
+        stage('Test') {
             steps {
                 sh "mvn runTests"
             }
         }
         stage('Archive'){
-            sleps {
+            steps {
                 archiveArtifacts artifacts: '*.jlar', allowEmptyArchive: true
             }
         }
