@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 checkout scm
-                sh "mvn build"
+                bat "mvn build"
             }
         }
         stage('Test') {
             steps {
-                sh "mvn runTests"
+                bat "mvn runTests"
             }
         }
         stage('Archive'){
