@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 checkout scm
-                bat "mvn build"
+                bat "mvn package"
             }
         }
         stage('Test') {
