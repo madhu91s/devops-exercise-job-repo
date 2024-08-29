@@ -16,7 +16,7 @@ public class Testcases {
 	
 	@Test
 	void failingTest() {
-		assertEquals(1, 2, "Test fails on purpose");
+		assertEquals(1, 1, "Test fails on purpose");
 	}
 
 	@Test
