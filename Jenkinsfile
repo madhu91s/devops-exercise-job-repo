@@ -10,12 +10,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat "mvn runTests"
+                bat "mvn test"
             }
         }
         stage('Archive'){
             steps {
-                archiveArtifacts artifacts: '*.jlar', allowEmptyArchive: true
+                archiveArtifacts artifacts: '*.jar', allowEmptyArchive: true
             }
         }
     }
